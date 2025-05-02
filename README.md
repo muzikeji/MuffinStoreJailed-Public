@@ -1,13 +1,23 @@
-# MuffinStore Jailed
+# MuffinStore 越狱版
 
-Hacked together on-device App Store client, view it more-so as a PoC than as a final tool.
+这是一个在设备端快速搭建的 App Store 客户端，请将其视为概念验证（PoC）而非最终工具。
 
-Publicizing because it could be useful for some people, however please use TrollStore MuffinStore over this if you can. This is not meant to be a final product, but it can be helpful for some people.
+选择公开是因为可能对部分用户有帮助，但如果您能使用 TrollStore 版的 MuffinStore，请优先选择该版本。当前版本并非最终产品，但或许能为某些用户提供便利。
 
-The UI is a bit scuffed, there's no progress bar during downgrading so just wait on the screen until you get a popup that requests installation ( the time this takes depends on how big the app is, so please wait. ), and then after you press install wait like ~5 more seconds and then you can return to SpringBoard to see the app downgrade being finalized.
+## 使用须知
+- **UI 粗糙**：界面优化不足，降级过程无进度条显示，请停留在当前界面直至弹出安装请求（等待时间取决于应用体积）。点击安装后约等待 5 秒，即可返回 SpringBoard 查看应用降级完成状态。
+  
+- **免责声明**：本工具具有实验性质，开发者不对使用产生的任何问题负责。虽然理论上不会造成损害，但请用户自行承担使用风险。
 
-I am not responsible for any issues caused by the usage of this tool, it's experimental and I will not be held accountable if anything happens. Use at your own risk. Although nothing should happen, just putting this here just in case.
+- **数据保存提示**：
+  - 降级前需卸载目标应用
+  - 可通过 iOS 的「卸载应用」功能（保留数据模式）先行卸载，再执行降级以保留应用数据
 
-The app you want to downgrade will need to be uninstalled, however, you can preserve app data by offloading the app first, and then downgrading it.
+- **两步验证指南**：
+  - 推荐通过「设置」应用预先获取 2FA 验证码
+  - iOS 18+ 用户若设置中无此选项：
+    1. 首次登录时留空验证码栏
+    2. 根据弹窗提示获取验证码
+    3. 如未成功登录，请彻底关闭应用后重试
 
-You should request a 2fa code BEFORE logging in, via the Settings app, however, if the settings app doesn't show the option ( iOS 18+ ), you can leave the code field empty, and then you should get a popup, accept it, and copy the code from there. If it doesn't log you in fully close and re-open the app and try again.
+（译文注：SpringBoard 指 iOS 系统的桌面环境，相关专业术语保留英文表述以便理解）
