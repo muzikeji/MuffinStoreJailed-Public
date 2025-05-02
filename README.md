@@ -1,4 +1,4 @@
-# MuffinStore 越狱版
+# MuffinStore  公开版
 
 这是一个在设备端快速搭建的 App Store 客户端，请将其视为概念验证（PoC）而非最终工具。
 
